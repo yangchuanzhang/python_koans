@@ -6,16 +6,6 @@ from runner.koan import *
 # You need to write the triangle method in the file 'triangle.py'
 from triangle import *
 
-class TriangleError(RuntimeError):
-    pass
-
-def triangle(a, b, c):
-    if a == b and b == c:
-        return 'equilateral'
-    if a == b or b == c or c == a:
-        return 'isosceles'
-    return 'scalene'
-
 class AboutTriangleProject(Koan):
 
     def test_equilateral_triangles_have_equal_sides(self):
