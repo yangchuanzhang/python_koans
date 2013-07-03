@@ -15,8 +15,7 @@ class DiceSet(object):
         return self._values
 
     def roll(self, n):
-        # Needs implementing!
-        # Tip: random.randint(min, max) can be used to generate random numbers
+        self._values = [random.randint(1,6) for x in range(0, n)]
         pass
 
 
